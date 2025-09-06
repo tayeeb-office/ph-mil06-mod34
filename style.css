@@ -1,0 +1,60 @@
+
+
+.about ul{
+    list-style-type: disc;
+}
+
+/* Mobile Responsiveness... */
+
+@media (max-width: 767px){
+
+    /* Navbar Styles... */
+    .mobile_menu{
+        background-color: #15803D;
+    }
+    .logo{
+        margin-left: 0px;
+    }
+    .nav_btn{
+        margin-right: 40px;
+    }
+
+    /* Hero Section... */
+    .hero{
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .leaf{
+        display: none;
+    }
+    .hero h2{
+        font-size: 30px;
+    }
+
+    /* About Section... */
+    .about{
+        width:310px ;
+    }
+    .about div{
+        flex-direction: column;
+    }
+    .about p{
+        margin-top: 30px;
+    }
+    .about_txt{
+        width: 300px;
+    }
+    /* Impact Section... */
+    .impact{
+        flex-direction: column;
+    }
+
+    /* Plant tree Section... */
+    form{
+        width: 320px;
+    }
+
+    form input, a, select {
+        width: 270px;
+    }
+}
