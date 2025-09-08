@@ -17,6 +17,7 @@
     }
     .nav_btn{
         margin-right: 40px;
+        width: 150px;
     }
 
     /* Hero Section... */
@@ -28,7 +29,22 @@
         display: none;
     }
     .hero h2{
-        font-size: 30px;
+        font-size: 28px;
+    }
+
+    /* Choose your tree section... */
+    .choose_tree{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 310px;
+    }
+    .choose_tree_cart{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .tree_cart_btn{
+        width: 230px;
     }
 
     /* About Section... */

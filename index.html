@@ -13,6 +13,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!-- Connecting Fontawsome... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 
@@ -48,7 +51,8 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <a href="#plant_tree" class="btn bg-[#FACC15] text-[#15803D] rounded-[999px] mr-[110px] border-0 nav_btn">Plant a Tree</a>
+                <a href="#plant_tree"
+                    class="btn bg-[#FACC15] text-[#15803D] rounded-[999px] mr-[110px] border-0 nav_btn">Plant a Tree</a>
             </div>
             </div>
         </section>
@@ -71,6 +75,121 @@
     </header>
 
     <main class="bg-[#F0FDF4]">
+
+        <!-- Choose your tree section...  -->
+        <section class="choose_tree grid grid-cols-[200px_auto_230px] gap-4 py-[48px] w-[1280px] mx-auto">
+
+            <!-- Category Section -->
+            <div>
+                <div class="drawer lg:drawer-open">
+                    <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content flex flex-col items-center justify-center">
+                        <!-- Page content here -->
+                        <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden text-[#15803D] bg-yellow-400 rounded-[999px] border-0 w-[230px]">
+                            Open Sidebar
+                        </label>
+                    </div>
+                    <div class="drawer-side">
+                        <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
+                        <ul class="menu bg-base-200 text-base-content min-h-full w-[200px] p-4 bg-[#F0FDF4]">
+                            <h4 class="text-[18px] font-semibold ml-[12px] mb-[10px]">Categories</h4>
+                            <!-- Sidebar content here -->
+                            <li class="hover:bg-[#15803D] hover:text-white rounded-[4px]"><a>Ornamental Plants</a></li>
+                            <li class="hover:bg-[#15803D] hover:text-white rounded-[4px]"><a>Sidebar Item 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart Section -->
+            <div class="choose_tree_cart grid grid-cols-[1fr_1fr_1fr] gap-4">
+                <div class="card bg-base-100 w-[280px] h-[380px] shadow-sm">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 id="cart_name" class="card-title text-[14px] font-bold">
+                            Card Title
+                        </h2>
+                        <p class="text-[12px]">A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div class="card-actions justify-between">
+                            <div class="badge rounded-[400px] bg-[#DCFCE7] text-[#15803D]">Fashion</div>
+                            <div id="cart_price" class=" text-[14px] font-bold">550</div>
+                        </div>
+                        <div class="mt-[10px]">
+                            <a class="buy_now tree_cart_btn btn bg-[#15803D] text-white rounded-[999px] border-0 w-[230px]">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 w-[280px] h-[380px] shadow-sm">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 id="cart_name" class=" card-title text-[14px] font-bold">
+                            Card Title
+                        </h2>
+                        <p class="text-[12px]">A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div class="card-actions justify-between">
+                            <div class="badge rounded-[400px] bg-[#DCFCE7] text-[#15803D]">Fashion</div>
+                            <div  id="cart_price" class="text-[14px] font-bold">650</div>
+                        </div>
+                        <div class="mt-[10px]">
+                            <a class="buy_now tree_cart_btn btn bg-[#15803D] text-white rounded-[999px] border-0 w-[230px]">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 w-[280px] h-[380px] shadow-sm">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 id="cart_name" class="card-title text-[14px] font-bold">
+                            Card Title
+                        </h2>
+                        <p class="text-[12px]">A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div class="card-actions justify-between">
+                            <div class="badge rounded-[400px] bg-[#DCFCE7] text-[#15803D]">Fashion</div>
+                            <div id="cart_price" class=" text-[14px] font-bold">450</div>
+                        </div>
+                        <div class="mt-[10px]">
+                            <a class="buy_now tree_cart_btn btn bg-[#15803D] text-white rounded-[999px] border-0 w-[230px]">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- History Section  -->
+            <div class=" shadow bg-white rounded-[12px]">
+
+                <!-- Header Section -->
+                <div class="flex justify-between items-center p-[24px]">
+                    <h4 class="font-semibold text-[20px]">Your cart</h4>
+                </div>
+
+                <!-- Records Section -->
+                <div id="history_container">
+                    
+                </div>
+
+                <!-- Total Section -->
+                <div class="flex justify-between items-center p-[24px]">
+                    <span class="font-semibold text-[16px] ">Total :</span>
+                    <span class="font-semibold text-[16px]">00</span>
+                </div>
+
+            </div>
+
+        </section>
 
         <!-- About the Campaign Section... -->
         <section id="about" class="about w-[1140px] mx-auto pb-[100px]">
@@ -124,12 +243,12 @@
                     <input type="email" placeholder="Your Email Address"
                         class="text-gray-700 bg-white p-[10px] rounded-[6px] w-[500px]">
                     <select class=" bg-white p-[10px] rounded-[6px] w-[500px]">
-                        <option >Number of Trees</option>
-                        <option >01</option>
-                        <option >02</option>
-                        <option >03</option>
-                        <option >04</option>
-                        <option >05</option>
+                        <option>Number of Trees</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
                     </select>
                     <a class="btn bg-[#FACC15] text-[#15803D] rounded-[999px] border-0 w-[500px]">Donate Now</a>
                 </form>
@@ -141,6 +260,7 @@
             <p class="text-white py-[24px]">© 2025 Green Earth. All Rights Reserved.</p>
         </section>
     </footer>
+    <script src="cart.js"></script>
 </body>
 
 </html>
