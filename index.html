@@ -14,12 +14,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Connecting Fontawsome... -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
 
-<body>
+<body class="inter">
     <header>
 
         <!-- Navbar... -->
@@ -90,7 +92,8 @@
                     <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
                     <div class="drawer-content flex flex-col items-center justify-center">
                         <!-- Page content here -->
-                        <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden text-[#15803D] bg-yellow-400 rounded-[999px] border-0 w-[230px]">
+                        <label for="my-drawer-2"
+                            class="btn btn-primary drawer-button lg:hidden text-[#15803D] bg-yellow-400 rounded-[999px] border-0 w-[230px]">
                             Open Sidebar
                         </label>
                     </div>
@@ -122,13 +125,13 @@
 
                 <!-- Records Section -->
                 <div id="history_container">
-                    
+
                 </div>
 
                 <!-- Total Section -->
                 <div class="flex justify-between items-center p-[24px]">
                     <span class="font-semibold text-[16px] ">Total :</span>
-                    <span id="total_price" class="font-semibold text-[16px]">00</span>
+                    <span id="total_price" class="font-semibold text-[16px]">৳00</span>
                 </div>
 
             </div>
@@ -204,6 +207,17 @@
             <p class="text-white py-[24px]">© 2025 Green Earth. All Rights Reserved.</p>
         </section>
     </footer>
+
+    <dialog id="my_modal_2" class="modal">
+        <div id="modal_box" class="modal-box">
+            
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
+
+
     <script src="cart.js"></script>
 </body>
 
