@@ -4,6 +4,10 @@
     list-style-type: disc;
 }
 
+.rmv{
+    display: none;
+}
+
 /* Mobile Responsiveness... */
 
 @media (max-width: 767px){

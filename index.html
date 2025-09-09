@@ -76,6 +76,11 @@
 
     <main class="bg-[#F0FDF4]">
 
+        <!-- Loading Section...  -->
+        <section id="spinner" class="flex justify-center items-center pt-[50px] hidden">
+            <span class="loading loading-dots loading-xl "></span>
+        </section>
+
         <!-- Choose your tree section...  -->
         <section class="choose_tree grid grid-cols-[200px_auto_230px] gap-4 py-[48px] w-[1280px] mx-auto">
 
@@ -94,77 +99,16 @@
                         <ul class="menu bg-base-200 text-base-content min-h-full w-[200px] p-4 bg-[#F0FDF4]">
                             <h4 class="text-[18px] font-semibold ml-[12px] mb-[10px]">Categories</h4>
                             <!-- Sidebar content here -->
-                            <li class="hover:bg-[#15803D] hover:text-white rounded-[4px]"><a>Ornamental Plants</a></li>
-                            <li class="hover:bg-[#15803D] hover:text-white rounded-[4px]"><a>Sidebar Item 2</a></li>
+                            <div id="category_container">
+
+                            </div>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <!-- Cart Section -->
-            <div class="choose_tree_cart grid grid-cols-[1fr_1fr_1fr] gap-4">
-                <div class="card bg-base-100 w-[280px] h-[380px] shadow-sm">
-                    <figure>
-                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 id="cart_name" class="card-title text-[14px] font-bold">
-                            Card Title
-                        </h2>
-                        <p class="text-[12px]">A card component has a figure, a body part, and inside body there are title and actions parts
-                        </p>
-                        <div class="card-actions justify-between">
-                            <div class="badge rounded-[400px] bg-[#DCFCE7] text-[#15803D]">Fashion</div>
-                            <div id="cart_price" class=" text-[14px] font-bold">550</div>
-                        </div>
-                        <div class="mt-[10px]">
-                            <a class="buy_now tree_cart_btn btn bg-[#15803D] text-white rounded-[999px] border-0 w-[230px]">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card bg-base-100 w-[280px] h-[380px] shadow-sm">
-                    <figure>
-                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 id="cart_name" class=" card-title text-[14px] font-bold">
-                            Card Title
-                        </h2>
-                        <p class="text-[12px]">A card component has a figure, a body part, and inside body there are title and actions parts
-                        </p>
-                        <div class="card-actions justify-between">
-                            <div class="badge rounded-[400px] bg-[#DCFCE7] text-[#15803D]">Fashion</div>
-                            <div  id="cart_price" class="text-[14px] font-bold">650</div>
-                        </div>
-                        <div class="mt-[10px]">
-                            <a class="buy_now tree_cart_btn btn bg-[#15803D] text-white rounded-[999px] border-0 w-[230px]">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card bg-base-100 w-[280px] h-[380px] shadow-sm">
-                    <figure>
-                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                            alt="Shoes" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 id="cart_name" class="card-title text-[14px] font-bold">
-                            Card Title
-                        </h2>
-                        <p class="text-[12px]">A card component has a figure, a body part, and inside body there are title and actions parts
-                        </p>
-                        <div class="card-actions justify-between">
-                            <div class="badge rounded-[400px] bg-[#DCFCE7] text-[#15803D]">Fashion</div>
-                            <div id="cart_price" class=" text-[14px] font-bold">450</div>
-                        </div>
-                        <div class="mt-[10px]">
-                            <a class="buy_now tree_cart_btn btn bg-[#15803D] text-white rounded-[999px] border-0 w-[230px]">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
+            <div id="cart_container" class="choose_tree_cart grid grid-cols-[1fr_1fr_1fr] gap-4">
 
             </div>
 
@@ -184,7 +128,7 @@
                 <!-- Total Section -->
                 <div class="flex justify-between items-center p-[24px]">
                     <span class="font-semibold text-[16px] ">Total :</span>
-                    <span class="font-semibold text-[16px]">00</span>
+                    <span id="total_price" class="font-semibold text-[16px]">00</span>
                 </div>
 
             </div>
